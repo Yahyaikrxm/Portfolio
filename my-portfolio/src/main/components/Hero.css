@@ -1,0 +1,76 @@
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.hero-text {
+    color: #0023AD;
+    font-family: 'HelveticaNeue', sans-serif;
+    font-weight: 700;
+    font-size: 16rem;
+    line-height: 132px;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    user-select: none;
+    cursor: default;
+}
+
+.hero-subhead {
+    color: #1e1e1e;
+    margin-bottom: 20px;
+    padding: 0;
+    font-family: 'pixelade', sans-serif;
+    font-size: 3.5rem;
+}
+
+.style-a {
+    font-family: 'pixelade', sans-serif;
+    font-size: 28rem;
+}
+
+.hero-card {
+    /* styling element*/
+    color: #1e1e1e;
+    font-family: 'HelveticaNeue', sans-serif;
+    font-weight: 300;
+    background: rgba(203, 203, 203, 0.4);
+    backdrop-filter: blur(9px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(9px);
+    /* styling element padding */
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 20px;
+    width: 52%;
+    /* postitioning */
+    align-self: flex-end;
+    position: relative;
+    top: -50px;    
+}
+
+.hero-scroll-prompt {
+    color: #1e1e1e;
+    font-family: 'HelveticaNeue', sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.scroll-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 125px;
+    padding: 0;
+    gap: 1rem;
+    align-items: end;
+}
+
+.arrow-icon {
+    margin-bottom: 2px;
+}
