@@ -4,8 +4,9 @@ import "./Hero.css";
 function Hero() {
     return (
       <div className="hero-section">
-        <h3 className="hero-subhead">Welcome to my internet bubble, I'm</h3>
-        <p className="hero-text">Y<span className="style-a">a</span>HY<span className="style-a">a</span></p>
+        <h3 className="hero-subhead">Welcome to my corner on the internet, I'm</h3>
+        {/* <p className="hero-text">Y<span className="style-a">a</span>HY<span className="style-a">a</span></p> */}
+        <p className="hero-text">YAHYA</p>
         <p className="hero-card">Im an passionate high-school student and aspiring engineer. I enjoy web development, electronics, photography, and gaming.</p>
         <div className="scroll-div">
           <svg className="arrow-icon" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">

@@ -4,6 +4,13 @@ body {
   /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR132TBAD0-GhGhN8_2Xr-3obkFd4NzFbk6Hg&s"); */
 }
 
+hr {
+  color: #0023AD;
+  background-color: #0023AD;
+  height: 3px;
+  border-radius: 20px;
+}
+
 @font-face {
   font-family: 'pixelade';
   src: url('./fonts/pixelade.ttf') format('truetype');

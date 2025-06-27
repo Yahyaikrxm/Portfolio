@@ -1,0 +1,52 @@
+
+.Top {
+    margin-top: 100px;
+    background-color: #0023AD;
+    color: #ffffff;
+    display: flex;
+    gap: 4.5rem;
+    justify-content: center;
+    align-items: center;
+    padding-left: 400px;
+    padding-right: 400px;
+    }
+
+.footer-top-sub {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-me-text {
+    font-family: pixelade, sans-serif;
+    font-size: 4.5rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.link-footer {
+    padding: 4px;
+    margin: 0;
+    font-family: HelveticaNeue, sans-serif;
+    font-weight: 100;
+    font-size: 1.25rem;
+    color: #e9e9e9
+}
+
+.Bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #1745FF;
+    color: #ffffff;
+    }
+  
+.bottom-footer-text {
+    font-family: pixelade;
+    font-size:     1.75rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
