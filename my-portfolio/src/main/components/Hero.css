@@ -8,7 +8,7 @@
 }
 
 .hero-text {
-    color: #0023AD;
+    color: #EAEAEA;
     font-family: 'HelveticaNeue', sans-serif;
     font-weight: 700;
     font-size: 16rem;
@@ -23,7 +23,7 @@
 }
 
 .hero-subhead {
-    color: #0023AD;
+    color: #EAEAEA;
     margin-bottom: 20px;
     padding: 0;
     font-family: 'pixelade', sans-serif;
@@ -34,7 +34,7 @@
 }
 
 .hero-card {
-    color: #0023AD;
+    color: #EAEAEA;
     font-family: 'HelveticaNeue', sans-serif;
     font-weight: 900;
     font-size: 1.5rem;
@@ -43,7 +43,7 @@
 }
 
 .hero-scroll-prompt {
-    color: #1e1e1e;
+    color: #EAEAEA;
     font-family: 'HelveticaNeue', sans-serif;
     font-weight: 100;
     font-size: 1.5rem;

@@ -1,6 +1,6 @@
 .project-card-1 {
-    background-color: #ffffff;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #1A1A1A;
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.12);
     margin-left: 300px;
     margin-right: 300px;
     border-radius: 30px;
@@ -8,7 +8,7 @@
 }
 
 .project-card-head {
-    color: #0023AD;
+    color: #EAEAEA;
     font-size: 1.75rem;
     font-family: HelveticaNeue, sans-serif;
     margin-block-end: 0;
@@ -27,7 +27,7 @@
 .project-card-subhead {
     margin-block-end: 0;
     margin-block-start: 0;
-    color: #1035D7;
+    color: #EAEAEA;
     font-style: italic;
     font-family: HelveticaNeue, sans-serif;
     font-weight: 100;
@@ -39,7 +39,7 @@
 .project-card-text {
     margin-block-end: 0;
     margin-block-start: 0;
-    color: #0023AD;
+    color: #EAEAEA;
     font-family: HelveticaNeue, sans-serif;
     font-weight: 300;
     font-size: 1.25rem;
@@ -53,8 +53,8 @@
     padding: 10px;
     font-size: 1rem;
     font-family: Arial, HelveticaNeue, sans-serif;
-    color: #ffffff;
-    background-color: #1035D7;
+    color: #EAEAEA;
+    background-color: #4FA3FF;
     border-radius: 10px;
     font-weight: 900;
 }
