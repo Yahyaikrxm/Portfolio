@@ -1,12 +1,16 @@
 import React from "react";
 import "./Projects.css"; 
-import Project1 from "./subcomponents/Project1"
+import Projectone from "./subcomponents/Projectone"
+import Projecttwo from "./subcomponents/Projecttwo"
+import Projectthree from "./subcomponents/Projectthree"
 
 function Projects() {
     return (
         <div>
             <h1 className="projects-heading">PROJECTS</h1>
-            <Project1 />
+            <Projectone />
+            <Projecttwo />
+            <Projectthree />
         </div>
     );
 }
