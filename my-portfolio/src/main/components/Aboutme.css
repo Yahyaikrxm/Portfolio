@@ -36,5 +36,6 @@
     font-weight: 300;
     font-size: 1.25rem; 
     color: #0023ad;
-    margin-bottom: 20px;
+    margin-block-end: 40px;
+    margin-block-start: 0px;
 }
