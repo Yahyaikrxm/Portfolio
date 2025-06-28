@@ -3,7 +3,7 @@
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     margin-left: 300px;
     margin-right: 300px;
-    border-radius: 30px;
+    border-radius: 10px;
     display: flex;
 }
 
@@ -18,9 +18,9 @@
 .project-card-right {
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
     justify-content: space-between;
 }
 
@@ -47,27 +47,27 @@
 }
 
 .read-more-btn {
-    border-style: none;
+    border: 2px solid #1035D7 !important;
+    background-color: #ffffff;
+    color: #1035D7;
     width: auto;
     align-self: flex-start;
     padding: 10px;
     font-size: 1rem;
     font-family: Arial, HelveticaNeue, sans-serif;
-    color: #ffffff;
-    background-color: #1035D7;
     border-radius: 10px;
     font-weight: 900;
 }
 
 .project-pic1 {
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
     border-radius: 10px;
     object-fit: cover;
 }
 
 .project-pic-div {
-    padding: 20px;
+    padding: 40px;
     display: flex;
     align-items: center;
     justify-content: center;

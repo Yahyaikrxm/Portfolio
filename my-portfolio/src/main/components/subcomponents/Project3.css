@@ -3,27 +3,27 @@
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     margin-left: 300px;
     margin-right: 300px;
-    border-radius: 30px;
-    margin-top: 25px;
+    border-radius: 10px;
     display: flex;
+    margin-top: 25px;
 }
 
 .read-more-btn-3 {
-    border-style: none;
+    border: 2px solid #1035D7 !important;
+    background-color: #ffffff;
+    color: #1035D7;
     width: auto;
     align-self: flex-start;
     padding: 10px;
     font-size: 1rem;
     font-family: Arial, HelveticaNeue, sans-serif;
-    color: #ffffff;
-    background-color: #1035D7;
     border-radius: 10px;
     font-weight: 900;
 }
 
 .project-pic3 {
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
     border-radius: 10px;
     object-fit: cover;
 }
