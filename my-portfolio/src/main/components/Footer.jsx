@@ -12,21 +12,9 @@ function Footer() {
                     <div className="footer-top-links">
                         <div className="links-footer-1">
                             <div className="contact-1-icon">
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1">
-                                    <path d="m22.5 4.5l-11 11.25L.5 4.5m0 16L8.605 13m5.79 0l8.105 7.5" />
-                                    <path d="M22.5 4.5H.5v16h22z" />
-                                </g>
-                            </svg>
-
                                 <p className="link-footer">Yahyaikrxm@gmail.com</p>
                             </div>
                             <div className="contact-2-icon">
-                          
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z" />
-                            </svg>
                                 <p className="link-footer">+1 437-268-1551</p>
                             </div>
                         </div>
