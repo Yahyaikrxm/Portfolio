@@ -5,9 +5,10 @@
 }
 
 .pic-of-me {
-    width: 900px;
+    width: 800px;
     height: 200px;
     object-fit: cover;
+    border-radius: 5px;
 
 }
 
@@ -38,4 +39,11 @@
     color: #0023ad;
     margin-block-end: 40px;
     margin-block-start: 0px;
+}
+
+.about-me-card {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 40px;
 }
