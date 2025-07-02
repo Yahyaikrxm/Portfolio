@@ -1,21 +1,20 @@
 import React from "react";
-import "./Hero.css"; 
-import { motion } from "framer-motion";
+import "./Hero.css";
+import { useScroll, useTransform, motion } from "framer-motion";
 
 function Hero() {
+  const { scrollY } = useScroll();
+  const opacity = useTransform(scrollY, [0, 350], [1, 0]);
+  const y = useTransform(scrollY, [0, 350], [0, -40]);
+
   return (
     <div className="hero-section">
       <h3 className="hero-subhead">Welcome to my corner on the internet, I'm</h3>
       <p className="hero-text">YAHYA</p>
-      <p className="hero-card">I'm a passionate high-school student and aspiring engineer. I enjoy web development, electronics, photography, and gaming.</p>
-
-      <motion.div
-        className="scroll-div"
-        initial={{ opacity: 1, y: 0 }}
-        whileInView={{ opacity: 0, y: -20 }}
-        viewport={{ amount: 0.2 }}
-        transition={{ duration: 0.5 }}
-      >
+      <p className="hero-card">
+        I'm a passionate high-school student and aspiring engineer. I enjoy web development, electronics, photography, and gaming.
+      </p>
+      <motion.div className="scroll-div" style={{ opacity, y }}>
         <motion.div
           animate={{ y: [-4, 6] }}
           transition={{
