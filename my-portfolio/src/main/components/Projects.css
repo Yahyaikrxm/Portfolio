@@ -11,6 +11,11 @@
     margin-block-start: 0;
     margin-block-end: 0;
 }
+/* 
+.project-section {
+    position:relative;
+    height: 750px;
+} */
 
 .project-cards {
     margin-left: 300px;
@@ -81,7 +86,31 @@
     font-family: Arial, HelveticaNeue, sans-serif;
     border-radius: 10px;
     font-weight: 900;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
+  
+  .read-more-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #1035D7;
+    transition: left 0.2s ease;
+    z-index: -1;
+  }
+  
+  .read-more-btn:hover::before {
+    left: 0;
+  }
+  
+  .read-more-btn:hover {
+    color: #fff;
+    cursor: pointer;
+  }
 
 .project-pic1 {
     width: 350px;

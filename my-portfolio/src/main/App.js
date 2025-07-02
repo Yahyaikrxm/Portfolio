@@ -10,7 +10,9 @@ function App() {
   return (
     <div>
       <Navbar />
+      <div className="hero-page">
       <Hero />
+      </div>
       <Projects />
       <Aboutme />
       <Footer />
