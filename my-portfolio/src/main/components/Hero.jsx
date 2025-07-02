@@ -1,21 +1,47 @@
 import React from "react";
 import "./Hero.css"; 
+import { motion } from "framer-motion";
 
 function Hero() {
-    return (
-      <div className="hero-section">
-        <h3 className="hero-subhead">Welcome to my corner on the internet, I'm</h3>
-        {/* <p className="hero-text">Y<span className="style-a">a</span>HY<span className="style-a">a</span></p> */}
-        <p className="hero-text">YAHYA</p>
-        <p className="hero-card">Im an passionate high-school student and aspiring engineer. I enjoy web development, electronics, photography, and gaming.</p>
-        <div className="scroll-div">
-          <svg className="arrow-icon" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
-            <path fill="#000" d="M11 4h2v12h2v2h-2v2h-2v-2H9v-2h2zM7 14v2h2v-2zm0 0v-2H5v2zm10 0v2h-2v-2zm0 0v-2h2v2z"></path>
+  return (
+    <div className="hero-section">
+      <h3 className="hero-subhead">Welcome to my corner on the internet, I'm</h3>
+      <p className="hero-text">YAHYA</p>
+      <p className="hero-card">I'm a passionate high-school student and aspiring engineer. I enjoy web development, electronics, photography, and gaming.</p>
+
+      <motion.div
+        className="scroll-div"
+        initial={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 0, y: -20 }}
+        viewport={{ amount: 0.2 }}
+        transition={{ duration: 0.5 }}
+      >
+        <motion.div
+          animate={{ y: [-4, 6] }}
+          transition={{
+            duration: 0.75,
+            repeat: Infinity,
+            repeatType: "mirror",
+            ease: "easeInOut",
+          }}
+        >
+          <svg
+            className="arrow-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width={24}
+            height={24}
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#000"
+              d="M11 4h2v12h2v2h-2v2h-2v-2H9v-2h2zM7 14v2h2v-2zm0 0v-2H5v2zm10 0v2h-2v-2zm0 0v-2h2v2z"
+            ></path>
           </svg>
-          <div className="hero-scroll-prompt">Scroll down to discover</div>
-        </div>
-      </div>
-    );
-  }
+        </motion.div>
+        <div className="hero-scroll-prompt">Scroll down to discover</div>
+      </motion.div>
+    </div>
+  );
+}
 
 export default Hero;
