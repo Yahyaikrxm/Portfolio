@@ -7,15 +7,15 @@ const Aboutme = () => {
     const { scrollYProgress } = useScroll();
 
     // left box
-    const leftTop = useTransform(scrollYProgress, [0.4, 0.6], [0, 1]);
-    const leftDown = useTransform(scrollYProgress, [0.4, 0.6], [0, 1]);
+    const leftTop = useTransform(scrollYProgress, [.6, .8], [0, 1]);
+    const leftDown = useTransform(scrollYProgress, [.8, .9], [0, 1]);
 
     // right box
-    const rightTop = useTransform(scrollYProgress, [0.4, 0.6], [0, 1]);
-    const rightDown = useTransform(scrollYProgress, [0.4, 0.6], [0, 1]);
+    const rightTop = useTransform(scrollYProgress, [.6, .8], [0, 1]);
+    const rightDown = useTransform(scrollYProgress, [.8, .9], [0, 1]);
 
     return (
-        <div className="about-me-main" style={{ height: "200vh" }}>
+        <div className="about-me-main">
             <div className="about-card-and-photo">
                 <div className="about-me-text-div">
 
@@ -28,7 +28,7 @@ const Aboutme = () => {
                         xmlns="http://www.w3.org/2000/svg"
                     >
                         <motion.path
-                            d="M5 5 L200 5" // left to right
+                            d="M200 5 L5 5" // right to left
                             stroke="#0023AD"
                             strokeWidth="10"
                             strokeLinecap="round"
@@ -38,7 +38,7 @@ const Aboutme = () => {
                             d="M5 5 L5 115" // down
                             stroke="#0023AD"
                             strokeWidth="10"
-                            strokeLinecap="round"
+                            strokeLinecap="butt"
                             style={{ pathLength: leftDown }}
                         />
                     </motion.svg>
@@ -54,7 +54,7 @@ const Aboutme = () => {
                         xmlns="http://www.w3.org/2000/svg"
                     >
                         <motion.path
-                            d="M200 5 L5 5" // right to left
+                            d="M5 5 L200 5" // right to left
                             stroke="#0023AD"
                             strokeWidth="10"
                             strokeLinecap="round"
@@ -64,7 +64,7 @@ const Aboutme = () => {
                             d="M200 5 L200 115" // down
                             stroke="#0023AD"
                             strokeWidth="10"
-                            strokeLinecap="round"
+                            strokeLinecap="butt"
                             style={{ pathLength: rightDown }}
                         />
                     </motion.svg>
