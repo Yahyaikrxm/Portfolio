@@ -7,35 +7,18 @@ import imgpro3 from '../../assets/pic-of-me.JPG';
 
 function Projects() {
     const { scrollY } = useScroll();
-    // const y1 = useTransform(scrollY, [0, 600], [0, -40]);
-    // const y2 = useTransform(scrollY, [0, 950], [500, -350]);
-    // const y3 = useTransform(scrollY, [0, 1300], [950, -1000]);
-    // const y1 = useTransform(scrollY, [0, 600], [0, -40]);
-    // const scale1 = useTransform(scrollY, [900, 1200], [1, 0.8]);
-    // const opacity1 = useTransform(scrollY, [900, 1200], [1, 0.0]);
-    
-    // const y2 = useTransform(scrollY, [700, 1300], [0, -200]);
-    // const scale2 = useTransform(scrollY, [1400, 1700], [1, 0.8]);
-    // const opacity2 = useTransform(scrollY, [1400, 1700], [1, 0.0]);
-    
-    // const y3 = useTransform(scrollY, [800, 1400], [0, -400]);
-    // const scale3 = useTransform(scrollY, [1500, 1800], [1, 0.8]);
-    // const opacity3 = useTransform(scrollY, [1500, 1800], [1, 0.0]);
 
-    const y1 = useTransform(scrollY, [0, 600], [0, -40]);
-    const y2 = useTransform(scrollY, [0, 600], [0, -40]);
-    const y3 = useTransform(scrollY, [0, 600], [0, -40]);
+    const y1 = useTransform(scrollY, [0, 600], [0, -50]);
+    const y2 = useTransform(scrollY, [0, 600], [0, -50]);
+    const y3 = useTransform(scrollY, [0, 600], [0, -50]);
 
-    // const scale1 = useTransform(scrollY, [0, 600], [1, 0.8]);
-    // const scale2 = useTransform(scrollY, [0, 600], [1, 0.8]);
-    // const scale3 = useTransform(scrollY, [0, 600], [1, 0.8]);
+    const scale1 = useTransform(scrollY, [900, 1500], [1, 0.8]);
+    const scale2 = useTransform(scrollY, [1250, 1850], [1, 0.8]);
+    const scale3 = useTransform(scrollY, [1600, 2200], [1, 0.8]);
 
-    // const opacity1 = useTransform(scrollY, [0, 600], [1, 0.0]);
-    // const opacity2 = useTransform(scrollY, [0, 600], [1, 0.0]);
-    // const opacity3 = useTransform(scrollY, [0, 600], [1, 0.0]);
-    
-// const opacity2 = useTransform(scrollY, [1200, 1700], [1, 0.0]);
-
+    const opacity1 = useTransform(scrollY, [900, 1500], [1, 0.0]);
+    const opacity2 = useTransform(scrollY, [1250, 1850], [1, 0.0]);
+    const opacity3 = useTransform(scrollY, [1600, 2200], [1, 0.0]);    
 
   return (
     <div className="project-section">
@@ -50,7 +33,7 @@ function Projects() {
             transition={{ 
                 duration: 0.2,
                 ease: "easeInOut" }}
-            style={{ y: y1 }}>
+            style={{ y: y1, scale: scale1, opacity: opacity1}}>
 
             <div className="project-pic-div">
                 <img src={imgpro1} alt="Me" className="project-pic1"/>  
@@ -74,7 +57,7 @@ function Projects() {
             transition={{ 
                 duration: 0.2,
                 ease: "easeInOut" }}
-            style={{ y: y2 }}>
+            style={{ y: y2, scale: scale2, opacity: opacity2 }}>
 
           <div className="project-pic-div">
             <img src={imgpro2} alt="Me" className="project-pic2"/>  
@@ -100,7 +83,7 @@ function Projects() {
         duration: 0.2, 
         ease: "easeInOut" 
     }}
-    style={{ y: y3 }}
+    style={{ y: y3, scale: scale3, opacity: opacity3 }}
 >
   <div className="project-pic-div">
     <img src={imgpro3} alt="Me" className="project-pic3"/>  
