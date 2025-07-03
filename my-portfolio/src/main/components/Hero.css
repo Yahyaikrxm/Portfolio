@@ -50,6 +50,13 @@
     margin-top: 80px;
 }
 
+.about-me-text-div {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 1rem;
+}
+
 .scroll-div {
     display: flex;
     justify-content: center;
