@@ -10,12 +10,18 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div className="hero-page">
+      <div className="hero-page" id="home">
       <Hero />
       </div>
+      <div id="projects">
       <Projects />
+      </div>
+      <div id="about">
       <Aboutme />
+      </div>
+      <div id="contact">
       <Footer />
+      </div>
     </div>
   );
 }

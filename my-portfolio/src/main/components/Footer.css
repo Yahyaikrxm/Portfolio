@@ -87,6 +87,8 @@
     font-size:     2rem;
     margin-block-start: 0;
     margin-block-end: 0;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .contact-1-icon {
@@ -219,3 +221,10 @@
     transform-origin:left;
     transform: scaleX(1);
   }
+
+  .a-footer-bottom {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  
