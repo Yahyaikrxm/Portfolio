@@ -89,3 +89,22 @@
   padding-bottom: 3px;
 }
 
+@media (max-width: 576px) {
+  .nav-links {
+    gap: 2rem;
+  }
+
+  .mainLinks {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 2.5rem;
+  }
+
+  .mainLinks {
+    gap: 2.5rem;
+  }
+}
