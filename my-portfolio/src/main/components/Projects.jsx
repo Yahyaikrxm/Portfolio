@@ -42,7 +42,20 @@ function Projects() {
                 </div> 
                 <div className="project-card-right-2">
                 <Link to="/arduino-flip-clock">
-                <button className="read-more-btn">READ MORE</button>
+                  <motion.button 
+                  className="read-more-btn" 
+                  whileHover={{
+                    scale: 1.1,
+                    boxShadow: "0px 8px 20px rgba(0,0,0,0.2)",
+                    transition: {
+                      duration: 0.15, 
+                      ease: "easeOut"
+                    }
+                  }}
+                  whileTap={{ scale: 0.95 }}
+                  >
+                  READ MORE
+                  </motion.button>            
                 </Link>
                 </div>
             </div>
@@ -62,7 +75,20 @@ function Projects() {
               <p className="project-card-text">I’ve been doing photography as a hobby on and off and i find lots of fun in capturing the moment and I do my best to edit them - i find the most enjoyment in that. I love doing photography and wish to continue to more in the future . . .</p>
             </div> 
             <div className="project-card-right-2">
-              <button className="read-more-btn-2">READ MORE</button>
+                  <motion.button 
+                  className="read-more-btn-2" 
+                  whileHover={{
+                    scale: 1.1,
+                    boxShadow: "0px 8px 20px rgba(0,0,0,0.2)",
+                    transition: {
+                      duration: 0.15, 
+                      ease: "easeOut"
+                    }
+                  }}
+                  whileTap={{ scale: 0.95 }}
+                  >
+                  READ MORE
+                  </motion.button>   
             </div>
           </div>
           </motion.div>
@@ -83,7 +109,20 @@ function Projects() {
       <p className="project-card-text">I’ve been doing photography as a hobby on and off and I find lots of fun in capturing the moment and I do my best to edit them. I love doing photography and wish to continue more in the future...</p>
     </div> 
     <div className="project-card-right-2">
-      <button className="read-more-btn-3">READ MORE</button>
+      <motion.button 
+      className="read-more-btn-3" 
+      whileHover={{
+        scale: 1.1,
+        boxShadow: "0px 8px 20px rgba(0,0,0,0.2)",
+        transition: {
+          duration: 0.15, 
+          ease: "easeOut"
+        }
+      }}
+      whileTap={{ scale: 0.95 }}
+    >
+      READ MORE
+    </motion.button>
     </div>
   </div>
 </motion.div>
