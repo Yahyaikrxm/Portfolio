@@ -1,6 +1,7 @@
 import React from "react";
 import { useScroll, useTransform, easeIn, motion } from "framer-motion";
 import "./Projects.css"; 
+import { Link } from "react-router-dom";
 import imgpro1 from '../../assets/pic-of-me.JPG';
 import imgpro2 from '../../assets/pic-of-me.JPG';
 import imgpro3 from '../../assets/pic-of-me.JPG';
@@ -45,7 +46,9 @@ function Projects() {
                 <p className="project-card-text">I’ve been doing photography as a hobby on and off and i find lots of fun in capturing the moment and I do my best to edit them - i find the most enjoyment in that. I love doing photography and wish to continue to more in the future . . .</p>
                 </div> 
                 <div className="project-card-right-2">
+                <Link to="/arduino-flip-clock">
                 <button className="read-more-btn">READ MORE</button>
+                </Link>
                 </div>
             </div>
         </motion.div>
