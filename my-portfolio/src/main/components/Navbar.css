@@ -1,48 +1,70 @@
 .navbar {
     position: sticky;
-    top: 20px;
+    top: 30px;
     display: flex;
     justify-content: center;
     z-index: 99;
     margin: 20px;
   }
   
+  .mainLinks{
+    color: #00125A;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+
   .nav-links {
     /* styling element*/
     list-style: none;
-    background: rgba(203, 203, 203, 0.4);
-    backdrop-filter: blur(9px);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: rgba(195, 195, 195, 0.403);
+    backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(9px);
+    box-shadow: 
+      inset 0 0 12px rgba(255, 255, 255, 0.3),
+      0 4px 30px rgba(0, 0, 0, 0.2);
     /* styling element padding */
     font-size: 1.75rem;
-    padding-inline-start: 2rem;
-    padding-inline-end: 2rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
     gap: 3rem; 
     padding-top: 6px;
+    padding-bottom: 6px;
     padding-bottom: 10px;
     border-radius: 20px;
     /* positioning */
     display: flex;
-    justify-content: center;
+    justify-content: center;  
+    margin-block-start: 0;
+    margin-block-end: 0;
   }
 
   .nav-links a {
     text-decoration: none;
-    color: #1b1b1b;
     font-family: 'pixelade', sans-serif;
     position:relative;
     display:inline-block;
+    color: #00125A;
   }
 
 /* navbar hover animation */
-.nav-links a::after {
+.mainLinks a::after {
   content:'';
   position:absolute;
   width:100%;
   height:3px;
   bottom:-2px;
-  background:#0023AD;
+  background: #00125A;
   left:0;
   border-radius: 40px;
   transform: scaleX(0);
@@ -50,7 +72,20 @@
   transition: transform .3s;
 }
 
-.nav-links a:hover::after {
+.mainLinks a:hover::after {
   transform-origin:left;
   transform: scaleX(1);
 }
+
+.contactLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #0023ad, #00125A);
+  color: #ffffff !important;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 12px;
+  padding-bottom: 3px;
+}
+

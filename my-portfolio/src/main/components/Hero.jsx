@@ -9,10 +9,10 @@ function Hero() {
 
   return (
     <div className="hero-section">
-      <h3 className="hero-subhead">Welcome to my corner on the internet, I'm</h3>
-      <p className="hero-text">YAHYA</p>
+      <h3 className="hero-subhead">Welcome to my digital bubble, I'm</h3>
+      <p className="hero-text">Yahya</p>
       <p className="hero-card">
-        I'm a passionate high-school student and aspiring engineer. I enjoy web development, electronics, photography, and gaming.
+        I'm a passionate high-school student and aspiring engineer. I enjoy web development, electronics, photography, and gaming. I'm a passionate high-school student and aspiring engineer. I enjoy web development, electronics, photography, and gaming. 
       </p>
       <motion.div className="scroll-div" style={{ opacity, y }}>
         <motion.div

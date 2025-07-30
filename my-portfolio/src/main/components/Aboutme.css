@@ -25,7 +25,9 @@
     font-family: 'HelveticaNeue', sans-serif;
     font-weight: 900;
     font-size: 7rem;
-    color: #0023ad;
+    background: linear-gradient(to bottom, #0023ad, #00125A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin: 0;
     margin-block-start: 0;
     margin-block-end: 0;

@@ -6,7 +6,9 @@
     font-family: 'HelveticaNeue', sans-serif;
     font-weight: 900;
     font-size: 7rem;
-    color: #0023ad;
+    background: linear-gradient(to bottom, #0023ad, #00125A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin: 0;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -76,41 +78,18 @@
 }
 
 .read-more-btn {
-    border: 2px solid #1035D7 !important;
-    background-color: #ffffff;
-    color: #1035D7;
+    background: linear-gradient(to bottom, #0023ad, #00125A);
+    color: #ffffff;
+    border: none;
     width: auto;
     align-self: flex-start;
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 1rem;
     font-family: Arial, HelveticaNeue, sans-serif;
     border-radius: 10px;
     font-weight: 900;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-  
-  .read-more-btn::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: #1035D7;
-    transition: left 0.2s ease;
-    z-index: -1;
-  }
-  
-  .read-more-btn:hover::before {
-    left: 0;
-  }
-  
-  .read-more-btn:hover {
-    color: #fff;
     cursor: pointer;
-  }
+}
 
 .project-pic1 {
     width: 350px;
@@ -136,16 +115,17 @@
 }
 
 .read-more-btn-2 {
-    border: 2px solid #1035D7 !important;
-    background-color: #ffffff;
-    color: #1035D7;
+    background: linear-gradient(to bottom, #0023ad, #00125A);
+    color: #ffffff;
+    border: none;
     width: auto;
     align-self: flex-start;
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 1rem;
     font-family: Arial, HelveticaNeue, sans-serif;
     border-radius: 10px;
     font-weight: 900;
+    cursor: pointer;
 }
 
 .project-pic2 {
@@ -165,16 +145,17 @@
 }
 
 .read-more-btn-3 {
-    border: 2px solid #1035D7 !important;
-    background-color: #ffffff;
-    color: #1035D7;
+    background: linear-gradient(to bottom, #0023ad, #00125A);
+    color: #ffffff;
+    border: none;
     width: auto;
     align-self: flex-start;
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 1rem;
     font-family: Arial, HelveticaNeue, sans-serif;
     border-radius: 10px;
     font-weight: 900;
+    cursor: pointer;
 }
 
 .project-pic3 {
