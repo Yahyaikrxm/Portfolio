@@ -29,11 +29,6 @@ function Projects() {
         {/* Project card 1 */}
         <motion.div
             className="project-card-1"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.8 }}
-            transition={{ 
-                duration: 0.2,
-                ease: "easeInOut" }}
             style={{ y: y1, scale: scale1, opacity: opacity1}}>
 
             <div className="project-pic-div">
@@ -55,11 +50,6 @@ function Projects() {
 
         <motion.div
             className="project-card-2"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.8 }}
-            transition={{ 
-                duration: 0.2,
-                ease: "easeInOut" }}
             style={{ y: y2, scale: scale2, opacity: opacity2 }}>
 
           <div className="project-pic-div">
@@ -80,12 +70,6 @@ function Projects() {
         {/* Project card 3 */}
         <motion.div
     className="project-card-3"
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.8 }}
-    transition={{ 
-        duration: 0.2, 
-        ease: "easeInOut" 
-    }}
     style={{ y: y3, scale: scale3, opacity: opacity3 }}
 >
   <div className="project-pic-div">
