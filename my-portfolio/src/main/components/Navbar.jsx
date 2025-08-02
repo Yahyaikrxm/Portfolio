@@ -9,7 +9,7 @@ const Navbar = () => {
       <ul className="nav-links">
         {/* Icon top right nav */}
         <li className="nav-icon">
-           <svg width="35" height="35" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <svg className="svgIconNav" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="20.3573" cy="20.084" r="19.8111" fill="url(#paint0_linear_159_18)"/>
               <path d="M17.9692 23.3L10.6332 11.092H15.5612L20.2372 18.988L24.8852 11.092H29.7852L22.3652 23.412V31.084H17.9692V23.3Z" fill="white"/>
               <defs>
@@ -26,7 +26,7 @@ const Navbar = () => {
           <li><a href="#projects">PROJECTS</a></li>
           <li><a href="#about">ABOUT</a></li>
           </div>
-          <li><a href="#contact" className="contactLink">CONTACT</a></li>
+          <li className="contactADiv"><a href="#contact" className="contactLink">CONTACT</a></li>
           
         </ul>
     </nav>

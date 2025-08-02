@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     z-index: 99;
-    margin: 20px;
+    margin: 30px;
   }
   
   .mainLinks{
@@ -15,6 +15,11 @@
     justify-content: center;
     gap: 3rem;
   }
+
+ .svgIconNav {
+  height: 35px;
+  width: 35px;
+ }
 
   .nav-icon {
     display: flex;
@@ -35,11 +40,10 @@
       0 4px 30px rgba(0, 0, 0, 0.2);
     /* styling element padding */
     font-size: 1.75rem;
-    padding-inline-start: 1rem;
-    padding-inline-end: 1rem;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
     gap: 3rem; 
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 20px;
     /* positioning */
@@ -79,14 +83,19 @@
 
 .contactLink {
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: center;
   background: linear-gradient(to bottom, #0023ad, #00125A);
   color: #ffffff !important;
   padding-left: 12px;
   padding-right: 12px;
-  border-radius: 12px;
-  padding-bottom: 3px;
+  border-radius: 10px;
+}
+
+.contactADiv {
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 @media (max-width: 576px) {
@@ -107,4 +116,62 @@
   .mainLinks {
     gap: 2.5rem;
   }
+}
+
+@media (max-width: 576px) {
+  /* Small to mid-sized phones */
+  .nav-links {
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+  }
+
+  .navbar {
+    top: 25px;
+    margin: 25px;
+  }
+
+  .mainLinks {
+    gap: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .contactLink {
+    padding-bottom: 0px;
+    border-radius: 15px;
+  }
+
+  .svgIconNav {
+    height: 25px;
+    width: 25px;
+   }
+
+  .mainLinks a::after {
+    background: #ffffff00;
+  }
+}
+
+
+@media (max-width: 480px) {
+  /* Very small phones */
+  .nav-links {
+    gap: 1rem;
+    font-size: 1rem;
+  }
+
+  .mainLinks {
+    gap: 1rem;
+    font-size: 1rem;
+  }
+
+  .navbar {
+    top: 15px;
+    margin: 15px;
+  }
+
+  .contactLink {
+    padding-bottom: 0px;
+  }
+
 }
