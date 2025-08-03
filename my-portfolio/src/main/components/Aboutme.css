@@ -5,16 +5,18 @@
 }
 
 .pic-of-me {
-    width: 800px;
-    height: 200px;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
     object-fit: cover;
     border-radius: 5px;
 
 }
 
 .about-card-and-photo {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,7 +82,11 @@
     }    
    
     .about-me-card {
-        padding: 20px;
+        padding: 30px;
+    }
+
+    .about-text {
+        margin-block-end: 30px;
     }
 }
 /* 
@@ -106,17 +112,27 @@
         padding: 10px;
     }
 }
+*/
 
 @media (max-width: 768px) {
-    project-cards {
+    .about-me-main {
         margin-left: 50px;
         margin-right: 50px;
+    }    
+   
+    .about-me-card {
+        padding: 20px;
+    }
+
+    .about-text {
+        margin-block-end: 20px;
+        font-size: 1.25rem;
     }
 }
 
 @media (max-width: 576px) {
-    project-cards {
+    .about-me-main {
         margin-left: 25px;
         margin-right: 25px;
-    }
-} */
+    }  
+}

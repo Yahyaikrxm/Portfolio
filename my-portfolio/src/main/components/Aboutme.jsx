@@ -1,6 +1,6 @@
 import React from "react";
 import "./Aboutme.css"; 
-import pic from '../../assets/pic-of-me.JPG';
+import pic from '../../assets/pic-of-me-abtme.jpg';
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const Aboutme = () => {

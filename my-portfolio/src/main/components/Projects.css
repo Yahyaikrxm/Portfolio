@@ -245,14 +245,14 @@
 }
 
 @media (max-width: 768px) {
-    project-cards {
+    .project-cards {
         margin-left: 50px;
         margin-right: 50px;
     }
 }
 
 @media (max-width: 576px) {
-    project-cards {
+    .project-cards {
         margin-left: 25px;
         margin-right: 25px;
     }
