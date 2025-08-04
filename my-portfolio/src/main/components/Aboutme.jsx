@@ -15,60 +15,61 @@ const Aboutme = () => {
     const rightDown = useTransform(scrollYProgress, [.8, .9], [0, 1]);
 
     return (
+        <div>
+            <div className="about-me-text-div">
+            {/* left box */}
+            <motion.svg className="svgAbout"
+                width="90"
+                height="121"
+                viewBox="0 0 205 121"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <motion.path
+                    d="M200 5 L5 5" // right to left
+                    stroke="#0023AD"
+                    strokeWidth="10"
+                    strokeLinecap="round"
+                    style={{ pathLength: leftTop }}
+                />
+                <motion.path
+                    d="M5 5 L5 115" // down
+                    stroke="#0023AD"
+                    strokeWidth="10"
+                    strokeLinecap="butt"
+                    style={{ pathLength: leftDown }}
+                />
+            </motion.svg>
+
+            <h1 className="about-title">ABOUT ME</h1>
+
+            {/* right box */}
+            <motion.svg className="svgAbout"
+                width="90"
+                height="121"
+                viewBox="0 0 205 121"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <motion.path
+                    d="M5 5 L200 5" // right to left
+                    stroke="#0023AD"
+                    strokeWidth="10"
+                    strokeLinecap="round"
+                    style={{ pathLength: rightTop }}
+                />
+                <motion.path
+                    d="M200 5 L200 115" // down
+                    stroke="#0023AD"
+                    strokeWidth="10"
+                    strokeLinecap="butt"
+                    style={{ pathLength: rightDown }}
+                />
+            </motion.svg>
+            </div>
         <div className="about-me-main">
             <div className="about-card-and-photo">
-                <div className="about-me-text-div">
-
-                    {/* left box */}
-                    <motion.svg
-                        width="90"
-                        height="121"
-                        viewBox="0 0 205 121"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <motion.path
-                            d="M200 5 L5 5" // right to left
-                            stroke="#0023AD"
-                            strokeWidth="10"
-                            strokeLinecap="round"
-                            style={{ pathLength: leftTop }}
-                        />
-                        <motion.path
-                            d="M5 5 L5 115" // down
-                            stroke="#0023AD"
-                            strokeWidth="10"
-                            strokeLinecap="butt"
-                            style={{ pathLength: leftDown }}
-                        />
-                    </motion.svg>
-
-                    <h1 className="about-title">ABOUT ME</h1>
-
-                    {/* right box */}
-                    <motion.svg
-                        width="90"
-                        height="121"
-                        viewBox="0 0 205 121"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <motion.path
-                            d="M5 5 L200 5" // right to left
-                            stroke="#0023AD"
-                            strokeWidth="10"
-                            strokeLinecap="round"
-                            style={{ pathLength: rightTop }}
-                        />
-                        <motion.path
-                            d="M200 5 L200 115" // down
-                            stroke="#0023AD"
-                            strokeWidth="10"
-                            strokeLinecap="butt"
-                            style={{ pathLength: rightDown }}
-                        />
-                    </motion.svg>
-                </div>
+                
 
                 <div className="about-me-card">
                     <p className="about-text">
@@ -79,6 +80,7 @@ const Aboutme = () => {
                     <img src={pic} alt="Me" className="pic-of-me" />
                 </div>
             </div>
+        </div>
         </div>
     );
 };

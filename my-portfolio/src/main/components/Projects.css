@@ -219,6 +219,10 @@
         width: 245px;
         height: 175px;
     }
+
+    .projects-heading {
+        font-size: 6rem;
+    }
 }
 
 @media (max-width: 850px) {
@@ -242,12 +246,26 @@
     .project-pic-div {
         padding: 10px;
     }
+
+    .projects-heading {
+        font-size: 5.5rem;
+    }
 }
 
 @media (max-width: 768px) {
     .project-cards {
         margin-left: 50px;
         margin-right: 50px;
+    }
+
+    .projects-heading {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .projects-heading {
+        font-size: 4rem;
     }
 }
 
@@ -257,3 +275,9 @@
         margin-right: 25px;
     }
 }
+
+@media (max-width: 480px) {
+    .projects-heading {
+        font-size: 2.75rem;
+    }
+  }
